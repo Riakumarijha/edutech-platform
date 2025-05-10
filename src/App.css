@@ -1,0 +1,23 @@
+/* Make sure these are set globally */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    width: 100%;
+    /* Prevent horizontal scroll */
+}
+
+body {
+    overflow-y: auto;
+    /* Enable vertical scroll */
+    background-color: #fff;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
