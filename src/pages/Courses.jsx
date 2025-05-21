@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/cards.css';
 
+import { useNavigate } from 'react-router-dom';
+//import courseList from './courseData';
 import pythonImg from '../assets/python.png';
 import javaImg from '../assets/java.png';
 import webImg from '../assets/web.png';
@@ -17,7 +19,7 @@ const courseList = [
     {
         title: "Java Fullstack Development",
         image: javaImg,
-        description: "Master Java backend and frontend integration."
+        description: "Build enterprise apps using Java, Spring Boot, and frontend frameworks."
     },
     {
         title: "Web Development",
@@ -42,6 +44,12 @@ const courseList = [
 ];
 
 const Courses = () => {
+    const navigate = useNavigate();
+
+    const handleViewDetails = (index) => {
+        navigate(`/courses/${index}`);
+    };
+
     return (
         <div className="courses-container">
             <h2 className="section-title">Courses We Provide</h2>
@@ -56,7 +64,9 @@ const Courses = () => {
                                 <span className="stars">⭐⭐⭐⭐⭐</span>
                                 <span className="price">$ 360</span>
                             </div>
-                            <button className="details-btn">View Details</button>
+                            <button className="details-btn" onClick={() => handleViewDetails(index)}>
+                                View Details
+                            </button>
                         </div>
                     </div>
                 ))}

@@ -1,9 +1,9 @@
-import pythonImg from '../../assets/python.png';
-import javaImg from '../../assets/java.png';
-import webImg from '../../assets/web.png';
-import aiImg from '../../assets/ai.png';
-import coreJavaImg from '../../assets/corejava.png';
-import uiuxImg from '../../assets/uiux.png';
+import pythonImg from '../assets/python.png';
+import javaImg from '../assets/java.png';
+import webImg from '../assets/web.png';
+import aiImg from '../assets/ai.png';
+import coreJavaImg from '../assets/corejava.png';
+import uiuxImg from '../assets/uiux.png';
 
 const courseData = [
     {

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../../styles/auth.css';
+import '../../styles/CreateAccount.css';
+import '../../styles/Login.css';
 import { useAuth } from '../../context/AuthContext';
 import loginImage from '../../assets/login-banner.png';
+//import partnersImage from '../../assets/partners.png';
 
 const Login = () => {
     const { login } = useAuth();
@@ -16,7 +18,7 @@ const Login = () => {
         navigate('/'); 
     };
 
-    return (
+    return (        
         <div className="auth-wrapper">
             <div className="auth-image-section">
                 <img src={loginImage} alt="Login Visual" />
@@ -40,7 +42,6 @@ const Login = () => {
 
                     <div className="auth-footer">
                         <Link to="/signup">Don’t have an account? Create One</Link>
-                        <span style={{ color: 'blue', cursor: 'pointer' }}>Forgot Password?</span>
                     </div>
                 </form>
             </div>

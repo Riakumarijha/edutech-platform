@@ -44,8 +44,8 @@ const Contact = () => {
                 </div>
                 <div className="footer-right">
                     <h4>Contact Details</h4>
-                    <p>+91 6303251526</p>
-                    <p>example@gmail.com</p>
+                    <p> <i className="fas fa-phone-alt"></i> +91 6303251526</p>
+                    <p><i className="fas fa-envelope"></i> example@gmail.com</p>
                 </div>
             </footer>
         </div>

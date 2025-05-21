@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 40px;
-    background-color: white;
+    padding: 110px 50px;
+    background-color: whitesmoke;
 }
 
 .home-left {
@@ -16,6 +16,7 @@
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: black;
 }
 
 .home-left p {

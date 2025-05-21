@@ -41,7 +41,7 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0px;
 }
 
 .rating-price {
@@ -70,4 +70,36 @@
 
 .details-btn:hover {
     background-color: #5a32a3;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  line-height: 1.4;
+  padding: 12px;
+}
+
+.course-card h3 {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+.course-card p {
+  margin: 4px 0 8px;
+  font-size: 0.95rem;
+}
+
+.rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stars {
+  font-size: 1rem;
+  margin-right: 8px;
 }

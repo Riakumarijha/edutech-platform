@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../styles/cards.css';
 
@@ -30,6 +31,12 @@ const internships = [
     },
     {
         title: 'Python with AI and ML',
+        description: 'Work on real-time projects in Machine Learning using Python.',
+        image: aiImg
+    },
+
+    {
+        title: 'Python Fullstack Development',
         description: 'Work on real-time projects in Machine Learning using Python.',
         image: aiImg
     }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import partner from '../assets/partners.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,9 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="navbar-logo">EduPlatform</div>
+            <div className="navbar-logo">
+                <img src={partner} alt="Partner Logo" className="navbar-img" />
+            </div>
             <div className="hamburger" onClick={toggleMenu}>
                 &#9776; {/* This is the ☰ symbol */}
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../../styles/auth.css';
+import '../../styles/Signup.css';
 import { useAuth } from '../../context/AuthContext';
 import signupImage from '../../assets/signup-banner.png';
 import partnersImage from '../../assets/partners.png';
@@ -12,7 +12,7 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;
-        const email = form.email.value;
+        //const email = form.email.value;
         const password = form.password.value;
         const confirmPassword = form.confirmPassword.value;
 
@@ -21,10 +21,8 @@ const Signup = () => {
             return;
         }
 
-        // Simulate successful signup
         alert("Signup successful!");
 
-        // Set auth state and navigate
         login();
         navigate('/');
     };
@@ -36,6 +34,11 @@ const Signup = () => {
             </div>
 
             <div className="auth-form-section">
+                <div className="partner-section">
+                    <h3 style={{ marginTop: '40px', marginBottom: '20px' }}>We Have Collaborated With</h3>
+                    <img src={partnersImage} alt="Partner Logos" className="partners-image" />
+                </div>
+
                 <h2>Create New Account</h2>
                 <form className="auth-form" onSubmit={handleSubmit}>
                     <label>Email Address</label>
@@ -54,10 +57,6 @@ const Signup = () => {
                     </p>
                 </form>
 
-                <div className="partner-section">
-                    <h3 style={{ marginTop: '40px', marginBottom: '20px' }}>We Have Collaborated With</h3>
-                    <img src={partnersImage} alt="Partner Logos" className="partners-image" />
-                </div>
             </div>
         </div>
     );

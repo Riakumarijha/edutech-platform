@@ -6,7 +6,13 @@
     background-color: #032ea3;
     color: white;
     padding: 40px 20px;
-    text-align: center;
+    width: 512;
+    height: 47;
+    top: 2415px;
+    left: 109px;
+    font-family: Rubik;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .partner-logos {

@@ -1,6 +1,7 @@
 .about-container {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    width: 1440;
+    height: 890;
+    top: 107px;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -13,18 +14,22 @@
     background-color: rgba(0, 0, 0, 0.6);
     color: black;
     border-radius: 10px;
+    backdrop-filter: blur(8px);
+    z-index: -1;
 }
 
 .about-hero h1 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
+    color: whitesmoke
 }
 
 .about-hero p {
     line-height: 1.8;
     font-size: 14px;
     margin-bottom: 15px;
+    color: aliceblue;
 }
 
 .location-section {
@@ -54,8 +59,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 20px;
-    gap: 30px;
+    width: 1440;
+    height: 325;
+    top: 1346px;
+
 }
 
 .footer-left h3 {

@@ -40,10 +40,10 @@ const About = () => {
             <section className="location-section">
                 <h2>Our Location</h2>
                 <ul className="location-details">
-                    <li>1st sector, HSR Layout, Bangalore  Karnataka 560102</li>
-                    <li>Working Hours: 9 AM - 5 PM</li>
-                    <li>+91 6303251526</li>
-                    <li>example@gmail.com</li>
+                    <li><i className="fas fa-map-marker-alt"></i> 1st sector, HSR Layout, Bangalore  Karnataka 560102</li>
+                    <li><i className="fas fa-clock"></i> Working Hours: 9 AM - 5 PM</li>
+                    <li><i className="fas fa-phone-alt"></i> +91 6303251526</li>
+                    <li><i className="fas fa-envelope"></i> example@gmail.com</li>
                 </ul>
             </section>
 
@@ -60,8 +60,8 @@ const About = () => {
                 </div>
                 <div className="footer-right">
                     <h4>Contact Details</h4>
-                    <p>+91 6303251526</p>
-                    <p>example@gmail.com</p>
+                    <p> <i className="fas fa-phone-alt"></i> +91 6303251526</p>
+                    <p><i className="fas fa-envelope"></i> example@gmail.com</p>
                 </div>
             </footer>
         </div>
